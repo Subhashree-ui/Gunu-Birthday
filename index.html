@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtt=device-width, initial-scale=1.0">
+    <title>Birthday Surprise 🎁</title>
+
+    <style>
+        body {
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #ff6a88, #ff99ac);
+            font-family: Arial;
+            text-align:center;
+            color:white;
+        }
+
+        .box {
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size:40px;
+            font-weight: bold;
+        }
+
+        button {
+            padding:15px 30px;
+            font-size:18px;
+            border:none;
+            border-radius:30px;
+            background:white;
+            color:#ff4e50;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>🎉 Happy Birthday Gunu🎉</h1>
+    <p>I have a surprise for you ❤️</p>
+
+    <button onclick="openVideo()">🎥 Click for Surprise</button>
+</div>
+
+<script>
+function openVideo(){
+    window.location.href = "video.html";
+}
+</script>
+
+</body>
+</html>
